@@ -1,0 +1,360 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left : 0.5%;
+    margin-right : 0.5%;
+    padding: 0;
+    background-color :#262323;
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(218, 214, 214);
+    padding : 15px ;
+    position: sticky;
+    z-index: 500;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+
+
+h1 {
+    color: #000000;
+    margin: 0;
+}
+
+h2 {
+    color : rgb(218, 214, 214);
+
+}
+
+nav {
+    margin-top: 0.15%;
+    margin-bottom : 0.15%;
+    margin-left: 5%;
+
+    display : flex;
+    align-items: center;
+    
+}
+
+nav div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a4a4a; 
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    
+
+}
+
+nav a:hover {
+    color: #e2ab98; 
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 0.7fr));
+    gap: 20px;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.case {
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    transition: transform 0.6s ease; 
+}
+
+.case:hover {
+    transform: scale(1.1);
+}
+
+.case img {
+    border-radius: 50%;
+    width: 75%;
+    height: auto;
+    margin-bottom: 10px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.case h2, .case p {
+    margin: 5px 0;
+    color: rgb(218, 214, 214);
+}
+
+#grid .case a {
+    text-decoration: none ;
+}
+
+#grid .case a:visited {
+    text-decoration: none ; 
+}
+
+footer {
+    text-align: center;
+    background-color: #262323;
+    color: #fff; 
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    position: fixed; /* Fixe le pied de page au bas de la fenêtre du navigateur */
+    z-index: 1000; 
+}
+
+#details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color : white;
+}
+
+
+.details-gauche {
+    flex: 1;
+    text-align: center;
+}
+
+ .details-gauche img {
+    max-width: 100%;
+} 
+
+
+.details-gauche .name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details-gauche .prix {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.details-mid {
+    flex: 1;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 10px;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+
+.details-droite {
+    flex: 1;
+    text-align: left;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+
+.buttons {
+    position:relative;
+    bottom: 25%; 
+    left: 49%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.buttons a {
+    margin-right: 10px;
+}
+
+.buttons a:last-child {
+    margin-right: 0;
+}
+
+.buttons button {
+    padding: 10px;
+    background-color: rgb(15, 52, 67);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.buttons button:hover {
+    background-color: rgb(5, 42, 57); /* Darken the button color on hover */
+}
+
+#Affdetails {
+    display : flex;
+    flex-direction: column;
+    
+}
+
+#Affpizza {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+}
+
+#liste {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top : 7em;
+    margin-bottom : 2em;
+    border-radius : 8px;
+    overflow: hidden;
+
+    display : flex;
+    
+}
+
+#liste th, #liste td {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+}
+
+#liste tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#liste tr:nth-child(odd) {
+    background-color: #a5a5a5;
+}
+
+#liste th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    padding-right: 10px;
+}
+
+#liste td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#liste a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#liste a:hover {
+    text-decoration: underline;
+}
+
+#B {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    height: 4em;
+    width: 15em;
+    margin-bottom: 2em;
+}
+
+#B a:hover {
+    text-decoration: underline;
+}
+
+
+.BoutAjout {
+    margin-bottom : 7em;
+    border-radius: 5px;
+    height : 2.5em;
+    width: 6em;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 40em;
+    margin-bottom: 5%;
+
+    border:solid 1px lightgrey;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px lightgrey;
+    padding:10px;
+    padding-bottom: 60px;
+}
+
+form label {
+    color : rgb(218, 214, 214);
+}
+
+form input, form select {
+    margin-right: 15%;
+}
+
+form div {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5em;
+    padding:10px 0px;
+}
+
+button[type="submit"] {
+    width:25%;
+    margin:auto;
+    height:2em;
+}
+
+main {
+    padding-bottom: 60px;
+    text-decoration: none;
+}
+
+#Bandeau {
+    margin-top: 2em;
+    max-width: 100%;
+    height: 23em;
+}
+
+.Bouton {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    max-height: 20px;  
+}
+
+.Menu {
+    display: flex;
+    margin-left : 5em;
+}
+
+
+.CA {
+    color : white;
+}
+
+.Esp {
+    margin-bottom: 20em;
+    margin-top: 5em;
+}
+
+.Esp2 {
+    margin-top: 7em;
+}
+
+
+

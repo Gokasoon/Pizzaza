@@ -1,0 +1,64 @@
+<main>
+    <form action="index.php" method="get">
+        <input type="hidden" name="objet" value="gens">
+        <input type="hidden" name="action" value="connect">
+        <div>
+            <label for="login">Login</label>
+            <input type="text" name="login" placeholder="login">
+        </div>
+        <div>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" placeholder="mot de passe">
+        </div>
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <form action="index.php" method="get">
+        <input type="hidden" name="objet" value="Client">
+        <input type="hidden" name="action" value="createAccount">
+        <div>
+            <label for="login_client">Login</label>
+            <input type="text" name="login_client" placeholder="login" required>
+        </div>
+        <div>
+            <label for="mdp_client">Mot de passe</label>
+            <input type="password" name="mdp_client" placeholder="mot de passe" required>
+        </div>
+        <div>
+            <label for="nom_client">Nom</label>
+            <input type="text" name="nom_client" placeholder="nom" required>
+        </div>
+        <div>
+            <label for="prenom_client">Prénom</label>
+            <input type="text" name="prenom_client" placeholder="prenom" required>
+        </div>
+        <div>
+            <label for="mail_client">email</label>
+            <input type="mail" name="mail_client" placeholder="email" required>
+        </div>
+        <div>
+            <label for="tel_client">Telephone</label>
+            <input type="text" name="tel_client" placeholder="tel" required>
+        </div>
+        <div>
+            <label>Adresse</label>
+        </div>
+        <div>
+            <label for="numero_rue">Numéro de rue</label>
+            <input type="number" name="numero_rue" placeholder="numéro de rue" required>
+        </div>
+        <div>
+            <label for="nom_rue">Nom de rue</label>
+            <input type="text" name="nom_rue" placeholder="nom de rue" required>
+        </div>
+        <div>
+            <label for="nom_ville">Ville</label>
+            <input type="text" name="nom_ville" placeholder="ville" required>
+        </div>
+        <div>
+            <label for="CP_ville">Code postal</label>
+            <input type="number" name="CP_ville" placeholder="code postal" required>
+        </div>        
+        <button type="submit">Créer mon compte</button>
+    </form>
+</main>
